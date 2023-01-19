@@ -5,7 +5,7 @@ private:
     T** last;
     int length = 0;
 public:
-    // ~stack();
+    ~stack();
     void push(T);
     void pop();
     T get_last();

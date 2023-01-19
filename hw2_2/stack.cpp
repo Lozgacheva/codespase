@@ -1,16 +1,16 @@
 #include "stack.h"
 #include <iostream>
 
-// template<typename T>
-// stack<T>::~stack()
-// {
-//     while(length!=0)
-//     {
-//         T** pr = last;
-//         last = &last[1];
-//         delete [] pr;
-//     }
-// }
+template<typename T>
+stack<T>::~stack()
+{
+    while(length!=0)
+    {
+        T** pr = last;
+        last = &last[1];
+        delete [] pr;
+    }
+}
 
 template<typename T>
 void stack<T>::push(T item)
