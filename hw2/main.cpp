@@ -9,9 +9,12 @@ int main()
     st.push(4);
     st.push(5);
     st.push(6);
-    std::cout << st.get_last()->value << std::endl;
-    std::cout << st.get_length() << std::endl;
+
+    std::cout << "последний элемент: " << st.get_last()->value << std::endl;
+    std::cout << "длина: " << st.get_length() << std::endl;
     st.pop();
-    std::cout << st.get_last()->value << std::endl;
+    std::cout << "последний элемент: " << st.get_last()->value << std::endl;
+    std::cout << "длина: " << st.get_length() << std::endl;
+
     return 0;
 }
